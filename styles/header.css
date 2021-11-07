@@ -69,4 +69,16 @@ header {
     .burger-icon-line {
         top: 40%;
     }
+
+    .nav-open{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: calc(100vh - 140px);
+        width: 100vw;
+    }
+    .lock{
+        overflow: hidden;
+    }
 }
