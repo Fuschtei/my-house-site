@@ -25,6 +25,7 @@ header.innerHTML +=`<div class="container header-content">
 </div>
 </div>`;
 
+
 const burger = document.querySelector('.burger-icon');
 const burgerFunction = () => {
     document.body.classList.toggle("lock-page");
