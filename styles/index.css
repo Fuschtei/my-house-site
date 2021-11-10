@@ -3,13 +3,42 @@
     padding: 0;
 }
 
-.container{
+:root {
+    font-size: 16px;
+}
+
+.container {
     max-width: 1200px;
     margin: auto;
 }
 
 a {
     text-decoration: none;
+}
+
+.burger-link-font {
+    font-size: 1rem;
+    color: #282520;
+    font-weight: 700;
+}
+
+.places-font {
+    font-size: 1rem;
+    color: #282520;
+}
+
+.numbers-font{
+    font-size: 1rem;
+    color: #f98250;
+}
+
+.lock-display{
+    display:none;
+}
+@media (max-width: 980px) {
+    .lock-display-980{
+        display:none;
+    }
 }
 
 /* font-family: 'Allerta', sans-serif;
