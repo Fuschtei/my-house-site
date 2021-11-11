@@ -2,8 +2,8 @@ const header = document.querySelector("#header");
 header.innerHTML += `
 
 
-<div id="header-content-grid">
-        <div class="container header-content">
+<div id="header-content-grid" class="container">
+        <div class="header-content">
             <div class="logo-wrap" id="header-logo">
                 <a class="image-logo-a" href="index.html">
                     <img class="image-logo" src="images/logo.JPG" alt="logo-image">
