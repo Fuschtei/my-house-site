@@ -1,8 +1,15 @@
-const header = document.querySelector("#header");
-header.innerHTML += `
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-<div id="header-content-grid">
+<body>
+    <div id="header-content-grid">
         <div class="container header-content">
             <div class="logo-wrap" id="header-logo">
                 <a class="image-logo-a" href="index.html">
@@ -31,17 +38,7 @@ header.innerHTML += `
                 </div>
             </div>
         </div>
-    </div>`;
+    </div>
+</body>
 
-
-const burger = document.querySelector('.burger-icon');
-const burgerFunction = () => {
-    document.body.classList.toggle("lock-page");
-
-    // const threeLine = document.querySelector('#three-line-icon');
-    // threeLine.classList.toggle("lock-display");
-
-    const navOpenMenu = document.querySelector('#nav-menu');
-    navOpenMenu.classList.toggle("lock-display-980");
-};
-burger.addEventListener("click", burgerFunction);
+</html>

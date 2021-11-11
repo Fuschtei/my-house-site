@@ -2,13 +2,74 @@ header {
     width: 100vw;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: content-box;
-    padding: 0 30px;
-    min-height: 140px;
+@media (min-width: 981px) {
+    #header-content-grid {
+        display: grid;
+        grid-template-columns: 130px 1fr 115px 1fr 1fr 115px 1fr 130px;
+        grid-template-rows: 1fr 1fr;
+        height: 200px;
+        padding: 30px 40px;
+        grid-row-gap: 30px;
+        grid-column-gap: 15px;
+    }
+
+    .nav-open>a {
+        margin: auto;
+    }
+
+    .header-content {
+        display: contents;
+    }
+
+    #nav-menu {
+        display: contents;
+    }
+
+    #header-nav-open {
+        display: contents;
+    }
+
+    #header-nav-links{
+        grid-area: 2/1/3/9;
+        display: flex;
+        justify-content: center;
+    }
+    #header-nav-links > a{
+        margin:0 10px;
+    }
+
+    .nav-open {
+        display: contents;
+    }
+
+    #header-places {
+        grid-area: 1/1/2/2;
+    }
+
+    #header-logo {
+        grid-area: 1/4/2/6;
+        margin: auto;
+    }
+
+    #header-numbers {
+        grid-area: 1/8/2/9;
+    }
+
+    #header-about {
+        grid-area: 2/3/3/4;
+    }
+
+    #header-galerry {
+        grid-area: 2/4/3/5;
+    }
+
+    #header-accommodation {
+        grid-area: 2/5/3/6;
+    }
+
+    #header-how-to-get-there {
+        grid-area: 2/6/3/7;
+    }
 }
 
 .image-logo-a {
@@ -29,6 +90,21 @@ header {
 }
 
 @media (max-width: 980px) {
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: content-box;
+        padding: 0 30px;
+        min-height: 140px;
+    }
+
+    #header-nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .burger-icon {
         cursor: pointer;
         position: relative;
@@ -82,7 +158,7 @@ header {
         margin-top: 30px;
     }
 
-    .lock-page{
+    .lock-page {
         overflow: hidden;
     }
 }
