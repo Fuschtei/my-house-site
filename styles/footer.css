@@ -1,0 +1,22 @@
+footer#footer img.image-logo {
+    height: auto;
+    width: 143px;
+}
+
+.ksa{
+    color: brown;
+}
+
+@media(max-width: 768px) {
+    #footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width:769px) {
+    #footer {
+        padding: 0 30px;
+    }
+}
