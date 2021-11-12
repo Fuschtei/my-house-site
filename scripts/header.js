@@ -38,10 +38,9 @@ const burger = document.querySelector('.burger-icon');
 const burgerFunction = () => {
     document.body.classList.toggle("lock-page");
 
-    // const threeLine = document.querySelector('#three-line-icon');
-    // threeLine.classList.toggle("lock-display");
-
     const navOpenMenu = document.querySelector('#nav-menu');
     navOpenMenu.classList.toggle("lock-display-980");
+
+    burger.classList.toggle("active");
 };
 burger.addEventListener("click", burgerFunction);
