@@ -3,8 +3,8 @@ footer#footer img.image-logo {
     width: 143px;
 }
 
-.ksa{
-    color: brown;
+.space {
+    white-space: nowrap
 }
 
 @media(max-width: 768px) {
