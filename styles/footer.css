@@ -20,6 +20,10 @@ div#footer-content img.image-logo {
         align-items: center;
     }
 
+    #footer-content>.image-logo-a {
+        margin: auto;
+    }
+
     .follow-us {
         font-size: 1.375rem;
     }
@@ -29,6 +33,7 @@ div#footer-content img.image-logo {
     #author,
     #rights {
         margin-top: 15px;
+        text-align: center;
     }
 
     #footer-about,
@@ -37,6 +42,7 @@ div#footer-content img.image-logo {
     .follow-us,
     .social-networks {
         margin-top: 40px;
+        text-align: center;
     }
 
     #rights {
