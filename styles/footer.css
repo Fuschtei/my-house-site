@@ -1,3 +1,7 @@
+.space {
+    white-space: nowrap
+}
+
 div#footer-content img.image-logo {
     height: auto;
     width: 143px;
@@ -41,10 +45,6 @@ div#footer-content img.image-logo {
 }
 
 @media (min-width:769px) {
-    .space {
-        white-space: nowrap
-    }
-
     #footer-content {
         box-sizing: border-box;
         height: 240px;
