@@ -1,0 +1,79 @@
+.bg-for-order-call {
+    background-image: url(../images/backgrounds/first-index-background.JPG);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.div-with-forms {
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    min-width: 280px;
+}
+
+.wrap-for-div-with-forms {
+    box-sizing: border-box;
+}
+
+.h-form-call {
+    font-size: 1.5625rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.p-form-call {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.div-with-forms > input {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 30px;
+    padding-left: 30px;
+    border: none;
+    background-color: rgba(40, 37, 32, 0.12);
+}
+
+@media (max-width: 766px) {
+    .bg-for-order-call {
+        height: 642px;
+    }
+
+    .wrap-for-div-with-forms {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 24px;
+    }
+
+    .div-with-forms {
+        height: 412px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 767px) {
+    .bg-for-order-call {
+        height: 726px;
+    }
+
+    .div-with-forms {
+        height: 480px;
+        width: 38%;
+    }
+
+    .wrap-for-div-with-forms {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        padding-right: 30px;
+    }
+}

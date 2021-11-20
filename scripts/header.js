@@ -26,12 +26,13 @@ header.innerHTML += `
                     <div class="places-font">County, Ca, USA</div>
                 </div>
                 <div class="numbers" id="header-numbers">
-                    <div class="numbers-font">+1 (234) 567 89 00</div>
-                    <div class="numbers-font">+1 (234) 567 89 01</div>
+                <a class="numbers-font" href="tel:+12345678900">+1 (234) 567 89 00</a>
+                <a class="numbers-font" href="tel:+12345678900">+1 (234) 567 89 00</a>
                 </div>
             </div>
         </div>
-    </div>`;
+    </div>
+    <div id="clock"></div>`;
 
 
 const burger = document.querySelector('.burger-icon');

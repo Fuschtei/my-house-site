@@ -1,4 +1,4 @@
-const ds = document.querySelector("#clock");
+const clock = document.querySelector("#clock");
 
 function date() {
     const fullDate = new Date();
@@ -86,8 +86,7 @@ function date() {
     }
 
 
-    ds.innerHTML = `${day} ${numberDayOfMonth} ${month} ${year}   ${hours}:${minutes}:${seconds}`;
+    clock.innerHTML = `${day} ${numberDayOfMonth} ${month} ${year} ${hours}:${minutes}:${seconds}`;
 }
 
 setInterval(date, 1000);
-// ds.innerText = setInterval(date, 1000);

@@ -1,5 +1,6 @@
 header {
     width: 100vw;
+    box-sizing: border-box;
 }
 
 /* .image-logo-a {
@@ -18,9 +19,10 @@ header {
         grid-template-columns: 130px 1fr 115px 1fr 1fr 115px 1fr 130px;
         grid-template-rows: 1fr 1fr;
         height: 200px;
-        padding: 30px 40px;
+        padding: 30px 30px 10px;
         grid-row-gap: 30px;
         grid-column-gap: 15px;
+        box-sizing: border-box;
     }
 
     .nav-open>a {
@@ -177,7 +179,22 @@ header {
         margin-top: 30px;
     }
 
+    .numbers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .lock-page {
         overflow: hidden;
     }
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 30px;
 }
