@@ -28,12 +28,20 @@
             <div class="wrap-for-div-with-forms container">
                 <div class="div-with-forms">
                     <div class="h-form-call allerta-font font-color-282520">Yosemite Vacation Cabin Rental</div>
-                    <div class="p-form-call roboto-font font-color-848484">Plan your next vacation and enjoy the nature around you!</div>
-                    <input class="roboto-font" name="name" type="text" placeholder="Name*">
-                    <input class="roboto-font" name="phone" type="text" placeholder="Phone number*">
+                    <div class="p-form-call roboto-font font-color-848484">Plan your next vacation and enjoy the nature
+                        around you!</div>
+                    <form action="https://formspree.io/f/myylrqnl" method="POST">
+                        <input type="hidden" name="_next" value="/for-look.html" />
+                        <input class="roboto-font" name="name" type="text" placeholder="Name*">
+                        <input class="roboto-font" name="phone" type="text" placeholder="Phone number*">
+                        <button class="order-a-call roboto-font" type="submit">
+                            ORDER A CALL
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
+
     </main>
     <footer id="footer"></footer>
     <script src="scripts/header.js"></script>
