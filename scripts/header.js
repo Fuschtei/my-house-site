@@ -40,13 +40,13 @@ header.innerHTML += `
                     <div class="places-font">${infoAboutUs.place}</div>
                 </div>
                 <div class="numbers" id="header-numbers">
-                <a class="numbers-font" href="${infoAboutUs.numbers[0].forCall}">${infoAboutUs.numbers[0].forText}</a>
-                <a class="numbers-font" href="${infoAboutUs.numbers[1].forCall}">${infoAboutUs.numbers[1].forText}</a>
+                <a class="numbers-font" href="tel:${infoAboutUs.numbers[0].forCall}">${infoAboutUs.numbers[0].forText}</a>
+                <a class="numbers-font" href="tel:${infoAboutUs.numbers[1].forCall}">${infoAboutUs.numbers[1].forText}</a>
                 </div>
             </div>
         </div>
     </div>
-    <div id="clock"></div>`;
+    <div id="clock"></div>;
 
 
 const burger = document.querySelector('.burger-icon');
