@@ -36,8 +36,8 @@ header.innerHTML += `
                     <a href="#" class="burger-link-font burger-link" id="header-how-to-get-there">How to get there</a>
                 </div>
                 <div class="places" id="header-places">
-                    <div class="places-font">Yosemite Mariposa</div>
-                    <div class="places-font">County, Ca, USA</div>
+                    <div class="places-font">${infoAboutUs.name}</div>
+                    <div class="places-font">${infoAboutUs.place}</div>
                 </div>
                 <div class="numbers" id="header-numbers">
                 <a class="numbers-font" href="${infoAboutUs.numbers[0].forCall}">${infoAboutUs.numbers[0].forText}</a>
