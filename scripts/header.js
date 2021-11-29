@@ -35,7 +35,7 @@ header.innerHTML += `
                 </div>
                 <div class="places" id="header-places">
                     <div class="places-font">${infoAboutUs.name}</div>
-                    <div class="places-font">${infoAboutUs.place}</div>
+                    <div class="places-font text-center">${infoAboutUs.place}</div>
                 </div>
                 <div class="numbers" id="header-numbers">
                 <a class="numbers-font" href="tel:${infoAboutUs.numbers[0].forCall}">${infoAboutUs.numbers[0].forText}</a>
