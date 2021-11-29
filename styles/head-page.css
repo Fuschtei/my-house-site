@@ -62,10 +62,6 @@
     margin-top: 30px;
 }
 
-.order-a-call:hover {
-    background-color: #599673;
-}
-
 @media (max-width: 766px) {
     .bg-for-order-call {
         height: 642px;
@@ -108,5 +104,10 @@
 
     .div-with-forms {
         padding-top: 60px;
+    }
+
+
+    .order-a-call:hover {
+        background-color: #599673;
     }
 }

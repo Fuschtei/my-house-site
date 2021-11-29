@@ -1,3 +1,17 @@
+let info = `{
+    "name": "Yosemite Mariposa ",
+    "place": "County, Ca, USA",
+    "numbers": [
+                {"forText": "+38 (067) 123 45 67",
+                "forCall": "+380671234567"},
+                {"forText": "+38 (050) 123 45 67",
+                "forCall": "+380501234567"}
+            ]
+    }`;
+
+
+let infoAboutUs = JSON.parse(info);
+
 const header = document.querySelector("#header");
 header.innerHTML += `
 
@@ -26,8 +40,8 @@ header.innerHTML += `
                     <div class="places-font">County, Ca, USA</div>
                 </div>
                 <div class="numbers" id="header-numbers">
-                <a class="numbers-font" href="tel:+12345678900">+1 (234) 567 89 00</a>
-                <a class="numbers-font" href="tel:+12345678900">+1 (234) 567 89 00</a>
+                <a class="numbers-font" href="${infoAboutUs.numbers[0].forCall}">${infoAboutUs.numbers[0].forText}</a>
+                <a class="numbers-font" href="${infoAboutUs.numbers[1].forCall}">${infoAboutUs.numbers[1].forText}</a>
                 </div>
             </div>
         </div>

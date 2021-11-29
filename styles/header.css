@@ -83,6 +83,10 @@ header {
     #header-how-to-get-there {
         grid-area: 2/6/3/7;
     }
+
+    #header-numbers>a {
+        white-space: nowrap;
+    }
 }
 
 @media (max-width: 320px) {
