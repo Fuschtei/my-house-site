@@ -14,8 +14,6 @@ let infoAboutUs = JSON.parse(info);
 
 const header = document.querySelector("#header");
 header.innerHTML += `
-
-
 <div id="header-content-grid" class="container">
         <div class="header-content">
             <div class="logo-wrap" id="header-logo">
@@ -46,7 +44,7 @@ header.innerHTML += `
             </div>
         </div>
     </div>
-    <div id="clock"></div>;
+    <div id="clock"></div>`
 
 
 const burger = document.querySelector('.burger-icon');
