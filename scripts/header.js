@@ -1,22 +1,22 @@
-// let info = `[{
-//     "name": "Yosemite Mariposa ",
-//     "place": "County, Ca, USA",
-//     "numbers": [
-//                 {"forText": "+38 (067) 123 45 67",
-//                 "forCall": "+380671234567"},
-//                 {"forText": "+38 (050) 123 45 67",
-//                 "forCall": "+380501234567"}
-//             ]
-//     }]`;
+let info = `[{
+    "name": "Yosemite Mariposa ",
+    "place": "County, Ca, USA",
+    "numbers": [
+                {"forText": "+38 (067) 123 45 67",
+                "forCall": "+380671234567"},
+                {"forText": "+38 (050) 123 45 67",
+                "forCall": "+380501234567"}
+            ]
+    }]`;
 
 // const response = await fetch ("info.json");
 // const info = await response.json();
 // console.log(info);
 
-fetch("info.json")
-  .then(response => response.json())
-  .then(json => console.log(json));
-// let infoAboutUs = JSON.parse(info);
+// fetch("info.json")
+//   .then(response => response.json())
+//   .then(json => console.log(json));
+let infoAboutUs = JSON.parse(info);
 
 
 const header = document.querySelector("#header");
