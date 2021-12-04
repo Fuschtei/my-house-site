@@ -1,16 +1,23 @@
-let info = `{
-    "name": "Yosemite Mariposa ",
-    "place": "County, Ca, USA",
-    "numbers": [
-                {"forText": "+38 (067) 123 45 67",
-                "forCall": "+380671234567"},
-                {"forText": "+38 (050) 123 45 67",
-                "forCall": "+380501234567"}
-            ]
-    }`;
+// let info = `[{
+//     "name": "Yosemite Mariposa ",
+//     "place": "County, Ca, USA",
+//     "numbers": [
+//                 {"forText": "+38 (067) 123 45 67",
+//                 "forCall": "+380671234567"},
+//                 {"forText": "+38 (050) 123 45 67",
+//                 "forCall": "+380501234567"}
+//             ]
+//     }]`;
 
+// const response = await fetch ("info.json");
+// const info = await response.json();
+// console.log(info);
 
-let infoAboutUs = JSON.parse(info);
+fetch("info.json")
+  .then(response => response.json())
+  .then(json => console.log(json));
+// let infoAboutUs = JSON.parse(info);
+
 
 const header = document.querySelector("#header");
 header.innerHTML += `
@@ -34,12 +41,12 @@ header.innerHTML += `
                     <a href="#" class="burger-link-font burger-link" id="header-how-to-get-there">How to get there</a>
                 </div>
                 <div class="places" id="header-places">
-                    <div class="places-font">${infoAboutUs.name}</div>
-                    <div class="places-font text-center">${infoAboutUs.place}</div>
+                    <div class="places-font">${infoAboutUs[0].name}</div>
+                    <div class="places-font text-center">${infoAboutUs[0].place}</div>
                 </div>
                 <div class="numbers" id="header-numbers">
-                <a class="numbers-font" href="tel:${infoAboutUs.numbers[0].forCall}">${infoAboutUs.numbers[0].forText}</a>
-                <a class="numbers-font" href="tel:${infoAboutUs.numbers[1].forCall}">${infoAboutUs.numbers[1].forText}</a>
+                <a class="numbers-font" href="tel:${infoAboutUs[0].numbers[0].forCall}">${infoAboutUs[0].numbers[0].forText}</a>
+                <a class="numbers-font" href="tel:${infoAboutUs[0].numbers[1].forCall}">${infoAboutUs[0].numbers[1].forText}</a>
                 </div>
             </div>
         </div>
