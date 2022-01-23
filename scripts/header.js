@@ -9,6 +9,9 @@ let info = `[{
             ]
     }]`;
 
+    // let obj = JSON.parse(info.json);
+    // console.log(obj);
+
 // const response = await fetch ("info.json");
 // const info = await response.json();
 // console.log(info);
