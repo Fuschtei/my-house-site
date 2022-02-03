@@ -1,84 +1,103 @@
 const card = document.querySelectorAll('.card-item-image');
 const modalPhotoWindow = document.querySelector(".modal-photo-window");
 const closeModalButton = document.querySelector(".close-modal-button");
+const zoomInModalButton = document.querySelector(".zoom-in-modal-button");
+const zoomOutModalButton = document.querySelector(".zoom-out-modal-button");
 const modalTopPanel = document.querySelector(".modal-top-panel");
 const darkBackground = document.querySelector(".dark-background");
 
-// card.forEach(function (i) {
-//     i.addEventListener("click", () => {
-//         // document.body.classList.add("page-dark");
-//         modalPhotoWindow.classList.remove("display-none");
-//         modalTopPanel.classList.remove("display-none");
-//         darkBackground.classList.remove("display-none");
-//     });
-// });
+
+
 
 card.forEach(function (i) {
     i.addEventListener("click", (event) => {
-        // document.body.classList.add("page-dark");
         modalPhotoWindow.classList.remove("display-none");
         modalTopPanel.classList.remove("display-none");
         darkBackground.classList.remove("display-none");
 
         let target = event.target.id;
-        let height = 130;
+        let width = 100;
+        zoomInModalButton.addEventListener("click", () => {
+            width += 50;
+            console.log(width)
+            return width;
+        })
+        zoomOutModalButton.addEventListener("click", () => {
+            width -= 50;
+            console.log(width)
+            return width;
+        })
 
         if (target == `houses-on-hill-img`) {
-            modalPhotoWindow.innerHTML = `<img
+            function housesOnHillImg() {
+                modalPhotoWindow.innerHTML = `<img
+            class="big-modal-img"
             style="
-            width: ${height}%;
-            margin: auto;
+            width:${width}%;
             "
-            src="https://res2.weblium.site/res/5ce40621b84b1a002410eb9e/5ce425c34045b70023557d9f_optimized"
-            alt="houses on hill">`
+            src="./images/images-for-zoom/houses-on-hill.jpeg"
+            alt="houses on hill">`}
+            setInterval(housesOnHillImg, 100)
         }
         else if (target == `street-in-village-img`) {
-            modalPhotoWindow.innerHTML = `<img
+            function streetInVillageImg() {
+                modalPhotoWindow.innerHTML = `<img
+            class="big-modal-img"
             style="
-            width: ${height}%;
-            margin: auto;
+            width:${width}%;
             "
-            src="https://res2.weblium.site/res/5ce40621b84b1a002410eb9e/5ce4246b72358b0023fc4948_optimized"
-            alt="street in village">`
+            src="./images/images-for-zoom/street-in-village.jpeg"
+            alt="street in village">`}
+            setInterval(streetInVillageImg, 100)
         }
         else if (target == `big-house-img`) {
-            modalPhotoWindow.innerHTML = `<img
+            function bigHouseImg() {
+                modalPhotoWindow.innerHTML = `<img
+            class="big-modal-img"
             style="
-            width: ${height}%;
-            margin: auto;
+            width:${width}%;
             "
-            src="https://res2.weblium.site/res/5ce40621b84b1a002410eb9e/5ce4259ec9f1c1002318991b_optimized"
-            alt="big house">`
+            src="./images/images-for-zoom/big-house.jpeg"
+            alt="big house">`}
+            setInterval(bigHouseImg, 100)
         }
         else if (target == `lake-img`) {
-            modalPhotoWindow.innerHTML = `<img
+            function lakeImg() {
+                modalPhotoWindow.innerHTML = `<img
+            class="big-modal-img"
             style="
-            width: ${height}%;
-            margin: auto;
+            width:${width}%;
             "
-            src="https://res2.weblium.site/res/5ce40621b84b1a002410eb9e/5ce423eadc5e3800248ca0ab_optimized"
-            alt="lake">`
+            src="./images/images-for-zoom/lake.jpeg"
+            alt="lake">`}
+            setInterval(lakeImg, 100)
         }
         else if (target == `mountains-img`) {
-            modalPhotoWindow.innerHTML = `<img
+            function mountainsImg() {
+                modalPhotoWindow.innerHTML = `<img
+            class="big-modal-img"
             style="
-            width: ${height}%;
-            margin: auto;
+            width:${width}%;
             "
-            src="https://res2.weblium.site/res/5ce40621b84b1a002410eb9e/5ce4221972358b0023fc470e_optimized"
-            alt="mountains">`
+            src="./images/images-for-zoom/mountains.jpeg"
+            alt="mountains">`}
+            setInterval(mountainsImg, 100)
         }
         else if (target == `house-by-the-river-img`) {
-            modalPhotoWindow.innerHTML = `<img
+            function houseByTheRiverImg() {
+                modalPhotoWindow.innerHTML = `<img
+            class="big-modal-img"
             style="
-            width: ${height}%;
-            margin: auto;
+            width:${width}%;
             "
-            src="https://res2.weblium.site/res/5ce40621b84b1a002410eb9e/5ce420c7dc5e3800248c9cfe_optimized"
-            alt="house by the river">`
+            src="./images/images-for-zoom/house-by-the-river.jpeg"
+            alt="house by the river">`}
+            setInterval(houseByTheRiverImg, 100)
         }
     });
 });
+
+setInterval(500)
 
 closeModalButton.addEventListener("click", () => {
     modalTopPanel.classList.add("display-none");
