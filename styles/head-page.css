@@ -332,14 +332,23 @@
     justify-content: center;
     align-items: center;
     margin-left: 15px;
+    cursor: pointer;
 }
 
-.zoom-0-modal-button{
+.zoom-0-modal-button {
     height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 3px solid #fff;
+    width: 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
     box-sizing: border-box;
+}
+
+.procent{
+    margin-left: 1px;
+}
+
+.zoom-0-modal-button>span {
+    font-size: 0.7rem;
 }
 
 .big-modal-img {
