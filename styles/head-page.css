@@ -323,7 +323,6 @@
     justify-content: flex-end;
     height: 100%;
     width: 100%;
-
 }
 
 .modal-button {
@@ -333,13 +332,21 @@
     justify-content: center;
     align-items: center;
     margin-left: 15px;
+}
 
+.zoom-0-modal-button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-sizing: border-box;
 }
 
 .big-modal-img {
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
     border: 1px solid grey;
 }
