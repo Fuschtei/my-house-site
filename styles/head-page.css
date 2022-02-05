@@ -1,3 +1,4 @@
+/* div order call ----------------------------------------------------------------------------------------------- */
 .bg-for-order-call {
     background-image: url(../images/backgrounds/first-index-background.JPG);
     background-position-x: center;
@@ -22,7 +23,7 @@
 }
 
 .h-form-call {
-    font-size: 1.375rem;
+    font-size: 1.4375rem;
     text-align: center;
     font-weight: 500;
 }
@@ -60,6 +61,13 @@
     color: #fff;
     font-weight: bold;
     margin-top: 30px;
+    transition-duration: 1s;
+}
+
+@media(min-width:991px) {
+    .h-form-call {
+        font-size: 1.5625rem;
+    }
 }
 
 @media (max-width: 766px) {
@@ -96,7 +104,39 @@
     }
 }
 
-/* styles for secions with cards 999+(responsive) */
+@media (min-width: 767px) {
+    .bg-for-order-call {
+        height: 726px;
+    }
+
+    .div-with-forms {
+        height: 480px;
+        width: 38%;
+    }
+
+    .wrap-for-div-with-forms {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        padding-right: 30px;
+    }
+
+    .div-with-forms {
+        padding-top: 60px;
+    }
+
+    .order-a-call:hover {
+        background-color: #599673;
+        transition-duration: 1s;
+    }
+
+    .your-adventure-starts-here--content {
+        padding: 0 40px;
+    }
+}
+
+/* Your Adventure Starts Here ----------------------------------------------------------------------------------------------- */
 
 @media (min-width: 767px) and (max-width:991px) {
     .cards-your-adventury {
@@ -132,14 +172,14 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .cards-your-adventury {
         display: grid;
         grid-template-columns: 3;
         grid-template-rows: 2;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-
+        height: 100%;
     }
 
     #houses-on-hill {
@@ -165,41 +205,17 @@
     #house-by-the-river {
         grid-area: 2 / 3 / 3 / 4;
     }
-}
 
-@media (min-width: 767px) {
-    .bg-for-order-call {
-        height: 726px;
+    .card-item>h3 {
+        font-size: 1.5625rem;
     }
 
-    .div-with-forms {
-        height: 480px;
-        width: 38%;
-    }
-
-    .wrap-for-div-with-forms {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 100%;
-        padding-right: 30px;
-    }
-
-    .div-with-forms {
-        padding-top: 60px;
-    }
-
-
-    .order-a-call:hover {
-        background-color: #599673;
-    }
-
-    .your-adventure-starts-here--content {
-        padding: 0 40px;
+    .your-adventure-starts-here--text>h2 {
+        font-size: 2.75rem;
     }
 }
 
-.your-adventure-starts-here {
+.your-adventure-starts-here-background {
     background-image: url(../images/backgrounds/Your\ Adventure\ Starts\ Here.JPG);
     background-position-x: left;
     background-repeat: no-repeat;
@@ -223,6 +239,7 @@
 .card-item>h3 {
     margin-top: 10px;
     text-shadow: 0px 0px 15px white;
+    font-size: 1.4375rem;
 }
 
 .cards-your-adventury h3 {
@@ -238,6 +255,7 @@
 .your-adventure-starts-here--text>h2 {
     text-align: center;
     margin-bottom: 40px;
+    font-size: 2.4375rem;
 }
 
 .your-adventure-starts-here--text>span {
@@ -250,15 +268,6 @@
     grid-template-columns: 6;
     grid-template-rows: 6;
     grid-gap: 20px;
-}
-
-
-.page-dark {
-    position: absolute;
-    background: rgb(173, 173, 173);
-    opacity: 0.2;
-    pointer-events: none;
-    /* overflow: hidden; */
 }
 
 .top-panel {
@@ -343,7 +352,7 @@
     box-sizing: border-box;
 }
 
-.procent{
+.procent {
     margin-left: 1px;
 }
 
@@ -358,4 +367,226 @@
     transform: translate(-50%, -50%);
     border-radius: 10px;
     border: 1px solid grey;
+}
+
+/* cabin-rentals -----------------------------------------------------------------------------------------------*/
+.cabin-rentals-background {
+    background-image: url(../images/backgrounds/cabin\ rentals.jpeg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+}
+
+.cabin-rentals--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.cabin-rentals--content>h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.cabin-rentals-cards {
+    width: 100%;
+}
+
+.item-rentals-card {
+    position: relative;
+}
+
+.item-rentals-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 3;
+    border-radius: 15px;
+}
+
+.item-rentals-card-background-dark-image {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(40, 37, 32, 0.8);
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.river-chalet-background {
+    background-image: url(../images/cards-cabin-rentals/river-chalet.jpeg);
+}
+
+.lookout-lodge-background {
+    background-image: url(../images/cards-cabin-rentals/lookout-lodge.jpeg);
+}
+
+.smoky-view-chalet-background {
+    background-image: url(../images/cards-cabin-rentals/smoky-view-chalet.jpeg);
+}
+
+.mountain-haven-background {
+    background-image: url(../images/cards-cabin-rentals/mountain-haven.jpeg);
+}
+
+.item-rentals-card-background-image {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.the-price-of-the-apartament {
+    color: #ffffff;
+    font-size: 2.4375rem;
+    margin-bottom: 40px;
+}
+
+.the-name-of-the-apartment {
+    color: #ffffff;
+    font-size: 1.4375rem;
+    margin-bottom: 20px;
+}
+
+.description-of-the-apartment {
+    color: rgb(189, 189, 189);
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+.button-learn-more {
+    height: 46px;
+    width: 134px;
+    background-color: #f98250;
+    color: #ffffff;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition-duration: 1s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-learn-more:hover {
+    height: 46px;
+    width: 134px;
+    background-color: #ffffff;
+    color: #f98250;
+    transition-duration: 1s;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition-duration: 1s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-see-all-cabins {
+    height: 46px;
+    width: 134px;
+    color: #ffffff;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition-duration: 1s;
+    border: #ffffff 1px solid;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.button-see-all-cabins:hover {
+    height: 46px;
+    width: 134px;
+    background-color: #ffffff;
+    color: #282520;
+    transition-duration: 1s;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition-duration: 1s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media (max-width: 766px) {
+    .cabin-rentals--content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .item-rentals-card {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+}
+
+@media (min-width: 767px) {
+    .cabin-rentals--content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 */
+
+    .cabin-rentals-cards {
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 2;
+
+        grid-gap: 30px 30px;
+    }
+
+    .river-chalet {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .lookout-lodge {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .smoky-view-chalet {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .mountain-haven {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
+
+@media (min-width: 991px) {
+
+    .cabin-rentals-title,
+    .the-price-of-the-apartament {
+        font-size: 2.75rem;
+    }
+
+    .the-name-of-the-apartment {
+        font-size: 1.5625rem;
+    }
 }
