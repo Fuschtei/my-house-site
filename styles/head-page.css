@@ -453,12 +453,14 @@
     color: #ffffff;
     font-size: 2.4375rem;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .the-name-of-the-apartment {
     color: #ffffff;
     font-size: 1.4375rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .description-of-the-apartment {
