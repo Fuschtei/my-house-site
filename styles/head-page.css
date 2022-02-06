@@ -1,6 +1,6 @@
 /* div order call ----------------------------------------------------------------------------------------------- */
 .bg-for-order-call {
-    background-image: url(../images/backgrounds/first-index-background.JPG);
+    background-image: url(../images/backgrounds/first-index-background.jpeg);
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -645,25 +645,25 @@
     box-sizing: border-box;
 }
 
-.things-to-Do-card-image{
+.things-to-Do-card-image {
     width: 100%;
     border-radius: 15px;
     margin-bottom: 25px;
 }
 
-.things-to-Do-card-title{
+.things-to-Do-card-title {
     margin-bottom: 20px;
     font-size: 1.4375rem;
     color: #282520;
 }
 
-.things-to-Do-card-price{
+.things-to-Do-card-price {
     margin-bottom: 20px;
     font-size: 1.25rem;
     color: #f98250;
 }
 
-.things-to-Do-card-description{
+.things-to-Do-card-description {
     text-align: center;
 }
 
@@ -744,7 +744,114 @@
     .things-to-Do-title {
         font-size: 2.75rem;
     }
-    .things-to-Do-card-title{
+
+    .things-to-Do-card-title {
         font-size: 1.5625rem;
+    }
+}
+
+/* Get full answer for your question -----------------------------------------------------------------------------------------------*/
+
+.get-full-answer-for-your-question-background {
+    background-image: url(../images/backgrounds/get-full-answer-for-your-question.jpeg);
+    background-size: cover;
+}
+
+.get-full-answer-for-your-question-content {
+    height: 100%;
+    padding: 180px 0;
+}
+
+.get-full-answer-for-your-question-title {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.get-full-answer-for-your-question-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button-call-us {
+    height: 55px;
+    width: 125px;
+    border-radius: 27px;
+    background-color: #f98250;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    transition-duration: 1s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-call-us:hover {
+    height: 55px;
+    width: 125px;
+    border-radius: 27px;
+    background-color: #ffffff;
+    color: #f98250;
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    transition-duration: 1s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-reservation {
+    height: 55px;
+    width: 165px;
+    border-radius: 27px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    transition-duration: 1s;
+    border: #ffffff 1px solid;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-reservation:hover {
+    height: 55px;
+    width: 165px;
+    border-radius: 27px;
+    background-color: #ffffff;
+    color: #282520;
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    transition-duration: 1s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media (max-width:360px){
+    .get-full-answer-for-your-question-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-reservation{
+        margin-top: 10px;
+    }
+}
+@media (min-width:361px){
+    .button-reservation{
+        margin-left: 10px;
     }
 }
