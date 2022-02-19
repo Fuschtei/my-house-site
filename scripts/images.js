@@ -3,7 +3,6 @@ const modalPhotoWindow = document.querySelector(".modal-photo-window");
 const closeModalButton = document.querySelector(".close-modal-button");
 const zoomInModalButton = document.querySelector(".zoom-in-modal-button");
 const zoomOutModalButton = document.querySelector(".zoom-out-modal-button");
-const zoom0ModalButton = document.querySelector(".zoom-0-modal-button");
 const modalTopPanel = document.querySelector(".modal-top-panel");
 const darkBackground = document.querySelector(".dark-background");
 
@@ -38,11 +37,6 @@ card.forEach(function (i) {
                 width = 100;
                 return width;
             }
-        });
-
-        zoom0ModalButton.addEventListener("click", () => {
-            width = 100;
-            return width
         });
 
         let changePhoto = (func) => {
