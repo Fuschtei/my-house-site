@@ -1285,6 +1285,7 @@
 
 .make-to-reservation-form p select {
     appearance: none;
+    position: absolute
 }
 
 .make-a-reservation-form-button {

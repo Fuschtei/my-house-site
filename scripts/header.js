@@ -121,7 +121,7 @@ header.innerHTML += `
                 <div id="header-nav-links">
                     <a href="#" class="burger-link-font burger-link" id="header-about">About</a>
                     <a href="#" class="burger-link-font burger-link" id="header-galerry">Gallery</a>
-                    <a href="#" class="burger-link-font burger-link" id="header-accommodation">Accommodation</a>
+                    <a href="accomondation.html" class="burger-link-font burger-link" id="header-accommodation">Accommodation</a>
                     <a href="#" class="burger-link-font burger-link" id="header-how-to-get-there">How to get there</a>
                 </div>
                 <div class="places" id="header-places">

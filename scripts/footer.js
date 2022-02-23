@@ -8,7 +8,7 @@ footer.innerHTML += `
             <a href="#" class="space font-color-282520 roboto-font" id="footer-rental-policies">Rental policies</a>
             <a href="#" class="font-color-282520 roboto-font" id="footer-photos">Photos</a>
             <a href="#" class="space font-color-282520 roboto-font" id="footer-how-to-get-there">How to get there</a>
-            <a href="#" class="font-color-282520 roboto-font" id="footer-accommodation">Accommodation</a>
+            <a href="accomondation.html" class="font-color-282520 roboto-font" id="footer-accommodation">Accommodation</a>
             <div class="space follow-us allerta-font font-color-282520">Follow Us</div>
             <div class="social-networks">
                 <a href="https://www.facebook.com/"><img src="images/social-networks/facebook.svg"
