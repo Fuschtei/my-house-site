@@ -1207,6 +1207,7 @@
 
 .make-to-reservation-content {
     max-width: 570px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1249,9 +1250,10 @@
     border-radius: 25px;
 }
 
-.make-to-reservation-form-item-select-guests{
+.make-to-reservation-form-item-select-guests {
     max-width: 100%;
 }
+
 .make-to-reservation-form-item-p-select-guests {
     width: 100%;
     box-sizing: border-box;
@@ -1326,15 +1328,17 @@
 }
 
 @media (max-width: 766px) {
-    .make-to-reservation-content {
-        padding-left: 24px;
-        padding-right: 24px;
+    .wrap-for-make-to-reservation-content {
+        margin-left: 24px;
+        margin-right: 24px;
+        width: calc(100%-48px);
     }
 }
 
 @media (min-width: 767px) {
-    .make-to-reservation-content {
-        padding-left: 40px;
-        padding-right: 40px;
+    .wrap-for-make-to-reservation-content {
+        margin-left: 40px;
+        margin-right: 40px;
+        width: calc(100%-80px);
     }
 }
