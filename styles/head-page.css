@@ -1194,3 +1194,147 @@
         font-size: 2.75rem;
     }
 }
+
+/* make-to-reservation -----------------------------------------------------------------------------------------------*/
+
+.make-to-reservation-background {
+    background-image: url(../images/backgrounds/make-to-reservation.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    padding: 120px 0;
+}
+
+.make-to-reservation-content {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.make-to-reservation-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #282520;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.make-to-reservation-description {
+    font-size: 1.1875rem;
+    color: #848484;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.make-to-reservation-form {
+    width: 100%;
+}
+
+.make-to-reservation-form p {
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #2825201f;
+    border-radius: 25px;
+}
+
+.make-to-reservation-form-item-select-guests{
+    max-width: 100%;
+}
+.make-to-reservation-form-item-p-select-guests {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.make-to-reservation-form-guest-list-down {
+    position: absolute;
+    right: 20px;
+    color: grey;
+}
+
+.make-to-reservation-form p input:focus,
+.make-to-reservation-form p select:focus {
+    outline: 1px solid #f98250;
+    border-radius: 25px;
+}
+
+.make-to-reservation-form p input,
+.make-to-reservation-form p select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: grey;
+    border: none;
+    padding-left: 30px;
+}
+
+
+.make-to-reservation-form p select {
+    appearance: none;
+}
+
+.make-a-reservation-form-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #f98250;
+    margin-top: 40px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition-duration: 1s;
+    border: none;
+}
+
+.make-a-reservation-form-button:hover {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #599673;
+    margin-top: 40px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition-duration: 1s;
+}
+
+@media (min-width: 991px) {
+
+    .make-to-reservation-title {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 766px) {
+    .make-to-reservation-content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (min-width: 767px) {
+    .make-to-reservation-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
